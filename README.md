@@ -36,3 +36,6 @@ uv run scripts/analyze_zip.py
 - `scripts/`: Logica de procesamiento y extraccion.
 - `reports/`: Reportes generados en PDF y fuentes Typst.
 - `GEMINI.md`: Guia de contexto y mandatos para el asistente de IA.
+
+## Bibliografia
+- **INEGI (2024):** Accidentes de Transito en Zonas Urbanas y Suburbanas (ATUS). Disponible en: [https://www.inegi.org.mx/app/descarga/ficha.html?tit=81640&ag=0&f=csv](https://www.inegi.org.mx/app/descarga/ficha.html?tit=81640&ag=0&f=csv)
