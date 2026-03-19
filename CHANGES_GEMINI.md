@@ -17,3 +17,14 @@ Este archivo registra los cambios estructurales y estratégicos realizados duran
 - Archivos ZIP nacionales originales de INEGI (300MB+ de datos redundantes).
 - Carpetas temporales de extracción nacional.
 - Scripts duplicados en raíz.
+
+## [2026-03-19] - Integracion Web e Interactividad
+### Agregado
+- Script `scripts/export_geojson_web.py` para exportacion de datos optimizados para MapLibre GL.
+- Script `scripts/generate_interactive_charts.py` para generacion de graficas Vega-Lite (JSON).
+- Dependencias `altair` y `vega_datasets` en pyproject.toml para visualización interactiva.
+- Exportación de activos (`hermosillo_vial.json` y charts) al proyecto del portafolio Darkmatter.
+
+### Cambiado
+- Configuración de `pyproject.toml` para soportar el nuevo stack de visualización.
+- Documentación global para incluir la bibliografía oficial de INEGI.

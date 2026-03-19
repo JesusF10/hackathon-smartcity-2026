@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ángeles Viales | Memorial y Mapa de Fatalidades Hermosillo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Sombra más pesada para un efecto de profundidad */
+        .map-shadow { box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        
+        /* Gradiente fúnebre/solemne */
+        .hero-gradient { 
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), 
+                        url('https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=2000'); /* Imagen de asfalto oscuro */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #map-display { 
+            transition: opacity 0.4s ease-in-out; 
+            filter: grayscale(20%); /* Un ligero toque desaturado para mantener el tono */
+        }
+
+        /* Estilo para el selector con tonos oscuros */
+        select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            appearance: none;
+        }
+    </style>
+</head>
+<body class="bg-[#0f0f0f] text-gray-300 font-sans leading-normal">
+
+    <header class="hero-gradient text-white py-20 px-6 text-center border-b border-red-900/30">
+        <h1 class="text-5xl md:text-6xl font-black mb-4 tracking-tighter text-white">ÁNGELES VIALES</h1>
+        <p class="text-xl text-red-500 font-light max-w-3xl mx-auto uppercase tracking-[0.2em]">
+            Hermosillo: El mapa de las ausencias
+        </p>
+        <div class="mt-6 w-24 h-1 bg-red-700 mx-auto"></div>
+    </header>
+
+    <main class="container mx-auto px-4 -mt-12">
+
+        <section id="mapa-section" class="mb-20">
+            <div class="bg-[#1a1a1a] rounded-lg map-shadow overflow-hidden border border-gray-800">
+                
+                <div class="bg-black text-white px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-4 border-b border-red-900/50">
+                    <div>
+                        <h2 class="font-bold uppercase tracking-widest text-red-600">Registro de Fatalidades</h2>
+                        <p class="text-xs text-gray-500 italic">Datos georreferenciados de incidentes en la ciudad</p>
+                    </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <label for="mapSelector" class="text-xs font-bold uppercase text-gray-400">Filtrar Vista:</label>
+                        <select id="mapSelector" onchange="cambiarMapa(this.value)" 
+                                class="bg-red-950/30 text-white border border-red-900 rounded px-4 py-2 outline-none focus:border-red-600 cursor-pointer text-sm min-w-[220px]">
+                            <option value="tu_mapa_qgis.png">Incidentes Totales</option>
+                            <option value="mapa_fatales.png">Víctimas Mortales</option>
+                            <option value="mapa_peatones.png">Atropellamientos</option>
+                            <option value="mapa_ciclistas.png">Ciclistas Caídos</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="relative w-full bg-[#050505]" style="min-height: 650px; display: flex; align-items: center; justify-content: center;">
+                    <img id="map-display" src="tu_mapa_qgis.png" alt="Mapa de Hermosillo" class="max-w-full h-auto">
+                    
+                    <div class="absolute bottom-6 left-6 bg-black/80 backdrop-blur-md p-5 rounded border border-red-900/50 text-xs">
+                        <p class="font-bold mb-3 text-red-500 uppercase tracking-widest border-b border-red-900 pb-1">Leyenda Crítica</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center"><span class="w-3 h-3 bg-red-600 shadow-[0_0_8px_rgba(220,38,38,0.8)] mr-3"></span> Muerte en sitio</li>
+                            <li class="flex items-center"><span class="w-3 h-3 bg-white mr-3"></span> Peatón afectado</li>
+                            <li class="flex items-center"><span class="w-3 h-3 bg-gray-500 mr-3"></span> Ciclista afectado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="graficas" class="mb-20">
+            <h2 class="text-2xl font-light text-center mb-12 uppercase tracking-[0.3em] text-gray-400">Análisis de la <span class="text-red-700 font-bold">Violencia Vial</span></h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-[#141414] p-8 rounded border border-gray-800 hover:border-red-900/50 transition duration-500">
+                    <h3 class="font-bold text-gray-400 text-sm mb-6 uppercase tracking-wider border-l-2 border-red-700 pl-3">Impacto por tipo de usuario</h3>
+                    <img src="grafica_tipo_accidente.png" alt="Gráfica PNG 1" class="w-full h-auto opacity-80 filter grayscale-[30%]">
+                </div>
+
+                <div class="bg-[#141414] p-8 rounded border border-gray-800 hover:border-red-900/50 transition duration-500">
+                    <h3 class="font-bold text-gray-400 text-sm mb-6 uppercase tracking-wider border-l-2 border-red-700 pl-3">Cronología de decesos</h3>
+                    <img src="grafica_mensual.png" alt="Gráfica PNG 2" class="w-full h-auto opacity-80 filter grayscale-[30%]">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-black py-16 border-t border-red-950">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-red-700 font-bold mb-4 tracking-[0.4em] uppercase">Ángeles Viales</p>
+            <p class="max-w-md mx-auto text-sm text-gray-500 mb-8 font-light italic">
+                "Detrás de cada punto en el mapa, hay una familia destrozada y una silla vacía en Hermosillo."
+            </p>
+            <div class="text-[10px] text-gray-700 uppercase tracking-widest">
+                Datos de libre acceso &copy; 2026 | Un proyecto de conciencia social
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function cambiarMapa(ruta) {
+            const mapImg = document.getElementById('map-display');
+            mapImg.style.opacity = '0.2';
+            setTimeout(() => {
+                mapImg.src = ruta;
+                mapImg.style.opacity = '1';
+            }, 300);
+        }
+    </script>
+
+</body>
+</html>

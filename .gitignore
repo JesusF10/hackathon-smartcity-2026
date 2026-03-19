@@ -25,3 +25,4 @@ data/**/*.txt
 *.qgz
 *.qgs
 .qgis2/
+data/**/*.json
