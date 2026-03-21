@@ -18,6 +18,11 @@ Este archivo registra los cambios estructurales y estratégicos realizados duran
 - Carpetas temporales de extracción nacional.
 - Scripts duplicados en raíz.
 
+## [2026-03-21] - Galería de Activos y Visualización
+### Agregado
+- Incorporación de `docs/captura-mapa.png` al README para mostrar el Dashboard Interactivo.
+- Incorporación de `docs/calle-logo.png` al README para ilustrar la propuesta de intervención física en calles.
+
 ## [2026-03-21] - Actualización de Contenido Web y Métricas
 ### Agregado
 - Integración de métricas de siniestralidad de Hermosillo (1er Lugar Nacional en fatalidades).

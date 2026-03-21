@@ -10,6 +10,10 @@
 Puedes consultar el mapa de riesgo y las estadísticas en tiempo real en:
 [https://jesusflores.me/projects/hackathon/angelesviales](https://jesusflores.me/projects/hackathon/angelesviales)
 
+<p align="center">
+  <img src="docs/captura-mapa.png" alt="Captura del Mapa Interactivo" width="600">
+</p>
+
 ## El Desafío en Hermosillo
 Hermosillo enfrenta una crisis de seguridad vial crítica:
 *   **1er Lugar Nacional** en muertes por accidentes viales.
@@ -22,6 +26,10 @@ Una arquitectura de intervención dual que evoluciona la campaña de **"Estrella
 
 ### 1. Intervención Física (Estrellas Negras)
 Colocación de **marcadores visuales y señalética de alto impacto** en el pavimento de zonas críticas. No es aleatorio; se basa en un **Visor Geográfico Cuádruple** que analiza:
+
+<p align="center">
+  <img src="docs/calle-logo.png" alt="Propuesta de Pintura en Calle" width="500">
+</p>
 *   Historial detallado de incidentes (2020-2024).
 *   Mapas de calor por tipo de movilidad (peatones, ciclistas, motociclistas).
 *   Zonas de velocidades mortales (alta energía cinética).
