@@ -18,13 +18,17 @@ Este archivo registra los cambios estructurales y estratégicos realizados duran
 - Carpetas temporales de extracción nacional.
 - Scripts duplicados en raíz.
 
-## [2026-03-19] - Integracion Web e Interactividad
+## [2026-03-21] - Análisis de Riesgo y Documentación
 ### Agregado
-- Script `scripts/export_geojson_web.py` para exportacion de datos optimizados para MapLibre GL.
-- Script `scripts/generate_interactive_charts.py` para generacion de graficas Vega-Lite (JSON).
-- Dependencias `altair` y `vega_datasets` en pyproject.toml para visualización interactiva.
-- Exportación de activos (`hermosillo_vial.json` y charts) al proyecto del portafolio Darkmatter.
+- `scripts/analyze_risk_causes.py`: Identificación de causas principales (imprudencia, celular).
+- `scripts/generate_intersection_ranking.py`: Top de cruceros peligrosos en Hermosillo.
+- `scripts/generate_victim_heatmaps.py`: Mapas de calor de lesionados y muertos.
+- `scripts/generate_speed_risk_map.py`: Análisis de relación entre velocidad y fatalidad.
+- `scripts/generate_collision_typology_2024.py`: Desglose de tipos de choque (frontal, alcance, etc).
+- `scripts/generate_adn_cards.py`: Generación de tarjetas "ADN" para perfiles de accidentes individuales.
+- `scripts/generate_multilevel_map_data.py`: Capas jerárquicas (punto, zona, sector) para visualización web.
 
 ### Cambiado
-- Configuración de `pyproject.toml` para soportar el nuevo stack de visualización.
-- Documentación global para incluir la bibliografía oficial de INEGI.
+- `scripts/README.md`: Documentación exhaustiva de todos los scripts de análisis y visualización.
+- Refinamiento de `scripts/export_geojson_web.py` y `scripts/generate_interactive_charts.py` para mejor integración con el front-end.
+- Actualización de `CHANGES_GEMINI.md` para seguimiento de progreso.
