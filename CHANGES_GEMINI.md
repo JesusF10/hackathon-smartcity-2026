@@ -18,6 +18,12 @@ Este archivo registra los cambios estructurales y estratégicos realizados duran
 - Carpetas temporales de extracción nacional.
 - Scripts duplicados en raíz.
 
+## [2026-03-21] - Actualización de Contenido Web y Métricas
+### Agregado
+- Integración de métricas de siniestralidad de Hermosillo (1er Lugar Nacional en fatalidades).
+- Detalles técnicos del stack web (Astro, MapLibre GL).
+- Explicación del Visor Geográfico Cuádruple y la metodología de intervención física.
+
 ## [2026-03-21] - Identidad Visual y Documentación Local
 ### Agregado
 - Integración de logo oficial `docs/logo-chilo-sin-letra.png` en el `README.md` global.

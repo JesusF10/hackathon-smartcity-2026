@@ -10,16 +10,33 @@
 Puedes consultar el mapa de riesgo y las estadísticas en tiempo real en:
 [https://jesusflores.me/projects/hackathon/angelesviales](https://jesusflores.me/projects/hackathon/angelesviales)
 
-## Inspiración
-Inspirado en la campaña **"Estrellas Negras"** de Colombia (iniciada por Antanas Mockus en 2003), donde marcas en el asfalto señalan los puntos exactos donde ocurrieron accidentes mortales. **Ángeles Viales** busca adaptar este concepto a la realidad local, utilizando datos para identificar dónde la imprudencia y el uso del celular cobran vidas.
+## El Desafío en Hermosillo
+Hermosillo enfrenta una crisis de seguridad vial crítica:
+*   **1er Lugar Nacional** en muertes por accidentes viales.
+*   **2do Lugar Nacional** en número total de siniestros.
+*   **Población en Riesgo:** ~936,263 habitantes.
+*   **Causas:** El uso del móvil y conductas imprudentes son los principales detonantes de choques y volcaduras mortales.
 
-## El Problema
-El uso del teléfono móvil y conductas imprudentes del conductor derivan constantemente en choques, volcaduras y atropellamientos. Estos eventos no son solo estadísticas; son puntos de dolor en nuestra infraestructura urbana.
+## La Solución: Ángeles Viales
+Una arquitectura de intervención dual que evoluciona la campaña de **"Estrellas Negras"** (Bogotá, 2003) para la realidad de Hermosillo:
 
-## La Solución
-Una arquitectura dual:
-1.  **Elementos Visuales:** Señalética física en puntos críticos identificados mediante análisis geoespacial.
-2.  **Campaña Informativa:** Recursos digitales basados en datos reales para concientizar a conductores y peatones.
+### 1. Intervención Física (Estrellas Negras)
+Colocación de **marcadores visuales y señalética de alto impacto** en el pavimento de zonas críticas. No es aleatorio; se basa en un **Visor Geográfico Cuádruple** que analiza:
+*   Historial detallado de incidentes (2020-2024).
+*   Mapas de calor por tipo de movilidad (peatones, ciclistas, motociclistas).
+*   Zonas de velocidades mortales (alta energía cinética).
+*   Horarios de máxima siniestralidad.
+
+### 2. Ecosistema Digital
+*   **Visor Geográfico:** Cuatro capas de análisis dinámico para visualización de riesgo.
+*   **Radiografía de Riesgo:** Diagnósticos de vialidades peligrosas y perfiles "ADN Vial".
+*   **Prevención Activa:** Cambio de enfoque de la multa (castigo) a la conciencia (prevención visual).
+
+## Stack Técnico
+*   **Análisis de Datos:** Python (`pandas`, `geopandas`, `altair`).
+*   **Visualización Web:** Astro, MapLibre GL, Vega-Lite.
+*   **Reporteo:** Typst (PDF de alta fidelidad).
+*   **Gestión:** `uv` para dependencias de Python.
 
 ## Datos
 El proyecto utiliza el dataset de **Accidentes de Tránsito en Zonas Urbanas y Suburbanas (ATUS) 2024** de INEGI, filtrado específicamente para el municipio de **Hermosillo, Sonora**.
