@@ -1,7 +1,8 @@
-# GEMINI.md - H-Vial / H-Vital
+# GEMINI.md - Ángeles Viales
 
 ## Project Mission
-**H-Vial / H-Vital** is a road safety initiative designed to reduce traffic accidents caused by mobile phone use and reckless driving in Hermosillo, Sonora. Inspired by Colombia's "Estrellas Negras" campaign, the project combines physical visual markers in the city with digital data analysis to raise awareness and save lives.
+**Ángeles Viales** is a road safety initiative designed to reduce traffic accidents caused by mobile phone use and reckless driving in Hermosillo, Sonora.
+ Inspired by Colombia's "Estrellas Negras" campaign, the project combines physical visual markers in the city with digital data analysis to raise awareness and save lives.
 
 ## Foundational Mandates
 - **Contextual Precedence:** All operations must align with the goal of identifying high-risk zones for visual intervention.

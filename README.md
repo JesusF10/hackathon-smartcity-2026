@@ -1,9 +1,13 @@
-# H-Vial / H-Vital
+# Ángeles Viales
 
-> Reduciendo siniestros viales a traves de la conciencia visual y el analisis de datos.
+> Reduciendo siniestros viales a través de la conciencia visual y el análisis de datos en Hermosillo.
 
-## Inspiracion
-Inspirado en la campaña **"Estrellas Negras"** de Colombia (iniciada por Antanas Mockus en 2003), donde marcas en el asfalto señalan los puntos exactos donde ocurrieron accidentes mortales. **H-Vial / H-Vital** busca adaptar este concepto a la realidad local, utilizando datos para identificar dónde la imprudencia y el uso del celular cobran vidas.
+## Dashboard Interactivo
+Puedes consultar el mapa de riesgo y las estadísticas en tiempo real en:
+[https://jesusflores.me/projects/hackathon/angelesviales](https://jesusflores.me/projects/hackathon/angelesviales)
+
+## Inspiración
+Inspirado en la campaña **"Estrellas Negras"** de Colombia (iniciada por Antanas Mockus en 2003), donde marcas en el asfalto señalan los puntos exactos donde ocurrieron accidentes mortales. **Ángeles Viales** busca adaptar este concepto a la realidad local, utilizando datos para identificar dónde la imprudencia y el uso del celular cobran vidas.
 
 ## El Problema
 El uso del teléfono móvil y conductas imprudentes del conductor derivan constantemente en choques, volcaduras y atropellamientos. Estos eventos no son solo estadísticas; son puntos de dolor en nuestra infraestructura urbana.

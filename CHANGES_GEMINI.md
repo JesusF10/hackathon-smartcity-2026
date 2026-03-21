@@ -18,6 +18,13 @@ Este archivo registra los cambios estructurales y estratégicos realizados duran
 - Carpetas temporales de extracción nacional.
 - Scripts duplicados en raíz.
 
+## [2026-03-21] - Rebranding a Ángeles Viales
+### Cambiado
+- Nombre del proyecto de "H-Vial / H-Vital" a **Ángeles Viales**.
+- `README.md`: Actualización de nombre y adición de sección para el Dashboard interactivo.
+- `GEMINI.md`: Actualización de misión del proyecto y encabezados.
+- `pyproject.toml`: Renombrado de paquete a `angeles-viales` y actualización de descripción.
+
 ## [2026-03-21] - Análisis de Riesgo y Documentación
 ### Agregado
 - `scripts/analyze_risk_causes.py`: Identificación de causas principales (imprudencia, celular).

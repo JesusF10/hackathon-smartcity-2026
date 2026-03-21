@@ -1,7 +1,7 @@
 [project]
-name = "h-vial-hermosillo"
+name = "angeles-viales"
 version = "0.1.0"
-description = "Iniciativa de seguridad vial H-Vial / H-Vital para Hermosillo, Sonora."
+description = "Ángeles Viales: Iniciativa de seguridad vial para Hermosillo, Sonora."
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
