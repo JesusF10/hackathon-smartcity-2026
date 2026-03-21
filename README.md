@@ -1,5 +1,9 @@
 # Ángeles Viales
 
+<p align="center">
+  <img src="docs/logo-chilo-sin-letra.png" alt="Ángeles Viales Logo" width="200">
+</p>
+
 > Reduciendo siniestros viales a través de la conciencia visual y el análisis de datos en Hermosillo.
 
 ## Dashboard Interactivo

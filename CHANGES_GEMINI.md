@@ -18,6 +18,11 @@ Este archivo registra los cambios estructurales y estratégicos realizados duran
 - Carpetas temporales de extracción nacional.
 - Scripts duplicados en raíz.
 
+## [2026-03-21] - Identidad Visual y Documentación Local
+### Agregado
+- Integración de logo oficial `docs/logo-chilo-sin-letra.png` en el `README.md` global.
+- Catálogo de documentación por carpeta (`scripts/`, `data/`, `reports/`).
+
 ## [2026-03-21] - Rebranding a Ángeles Viales
 ### Cambiado
 - Nombre del proyecto de "H-Vial / H-Vital" a **Ángeles Viales**.
